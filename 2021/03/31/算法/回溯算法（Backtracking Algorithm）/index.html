@@ -4,24 +4,23 @@
 <script src="/config.315f542c35fa70cffa46.js"></script>
 <!-- hexo injector head_begin end -->
 <meta charset="utf-8">
-<title>每日一题：LC133 克隆图 - Anyuan's blog</title>
+<title>回溯算法（Backtracking Algorithm） - Anyuan's blog</title>
 <base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="http://example.com/2021/03/16/%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%EF%BC%9ALC133%20%E5%85%8B%E9%9A%86%E5%9B%BE/">
+<link rel="canonical" href="http://example.com/2021/03/31/%E7%AE%97%E6%B3%95/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%EF%BC%88Backtracking%20Algorithm%EF%BC%89/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-<meta name="description" content="每日一题：LC133 克隆图 Medium 133. 克隆图 本文内容来源： LeetCode-Solution 关于本体JavaScript的写法 图的深拷贝：构建一张与原图结构、值均一样的图，但是其中的节点不再是原来图节点的引用。因此为了深拷贝出整张图，我们需要知道整张图的结构以及对应节点的值。 DFS 123456789101112131415161718192021222324252627">
+<meta name="description" content="回溯算法（Backtracking Algorithm） 本文主要来源：  📋labuladong的算法小抄-回溯算法接替套路框架  回溯算法建立在DFS基础之上，不同的是在搜索的过程中，达到结束条件后，恢复状态，回溯上一层，再次搜索。因此回溯算法和DFS的区别就是有无状态重叠。   什么时候使用回溯算法 当问题需要“回头”，以此来查找出所有的解的时候，使用回溯算法。即满足结束条件或发现不是正确">
 <meta property="og:type" content="website">
-<meta property="og:title" content="每日一题：LC133 克隆图">
-<meta property="og:url" content="http://example.com/2021/03/16/%E5%88%B7%E9%A2%98%E6%97%A5%E8%AE%B0/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98%EF%BC%9ALC133%20%E5%85%8B%E9%9A%86%E5%9B%BE/index.html">
+<meta property="og:title" content="回溯算法（Backtracking Algorithm）">
+<meta property="og:url" content="http://example.com/2021/03/31/%E7%AE%97%E6%B3%95/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%EF%BC%88Backtracking%20Algorithm%EF%BC%89/index.html">
 <meta property="og:site_name" content="Anyuan&#39;s blog">
-<meta property="og:description" content="每日一题：LC133 克隆图 Medium 133. 克隆图 本文内容来源： LeetCode-Solution 关于本体JavaScript的写法 图的深拷贝：构建一张与原图结构、值均一样的图，但是其中的节点不再是原来图节点的引用。因此为了深拷贝出整张图，我们需要知道整张图的结构以及对应节点的值。 DFS 123456789101112131415161718192021222324252627">
+<meta property="og:description" content="回溯算法（Backtracking Algorithm） 本文主要来源：  📋labuladong的算法小抄-回溯算法接替套路框架  回溯算法建立在DFS基础之上，不同的是在搜索的过程中，达到结束条件后，恢复状态，回溯上一层，再次搜索。因此回溯算法和DFS的区别就是有无状态重叠。   什么时候使用回溯算法 当问题需要“回头”，以此来查找出所有的解的时候，使用回溯算法。即满足结束条件或发现不是正确">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://www.gravatar.com/avatar/87193930254eeb92cf3d59b557609d72?s=160">
-<meta property="article:published_time" content="2021-03-15T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-03-16T15:20:47.702Z">
+<meta property="article:published_time" content="2021-03-30T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-31T16:19:39.493Z">
 <meta property="article:author" content="Anyuan Yu">
-<meta property="article:tag" content="LeetCode">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.gravatar.com/avatar/87193930254eeb92cf3d59b557609d72?s=160">
 
